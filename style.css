@@ -147,7 +147,7 @@ h3{ font-size: 1.35rem; line-height: 1.25; }
 .site-header.scrolled .logo{ color: var(--forest-deep); }
 .site-header.scrolled .logo small{ color: var(--clay); }
 
-.nav-links{ display:flex; gap: 34px; align-items:center; }
+.nav-links{ display:flex; gap: 34px; align-items:center;position:relative; z-index:500; }
 .nav-links a{
   font-size: 0.92rem; font-weight:500; color: var(--paper);
   position: relative; padding: 4px 0;
