@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact & Book an Inspection — Shelta Homes & Properties Ltd</title>
+<meta name="description" content="Book a property inspection or reach Shelta Homes & Properties Ltd at 9 Udo Idung, Nwaniba Road, Uyo, Akwa Ibom.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="logo">Shelta Homes<small>&amp; PROPERTIES LTD</small></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="index.html#services">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-line" href="https://wa.me/2349127955849?text=Hello%20Shelta%20Homes%20and%20Properties.%20I%27m%20interested%20in%20your%20services" target="_blank" rel="noopener">WhatsApp</a>
+      <a class="btn btn-dark" href="contact.html">Book an inspection</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <div class="crumb">Home <span>／</span> Contact</div>
+    <p class="eyebrow" style="margin-top:22px;color:var(--gold-soft)">LET'S TALK PROPERTY</p>
+    <h1>Book an inspection, or just ask a question.</h1>
+    <p class="lede">Tell us what you're looking for and we'll arrange a visit, or reach us directly on WhatsApp for a faster reply.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="contact-grid">
+
+      <div class="contact-info-card observe">
+        <h3>Reach us directly</h3>
+        <div class="info-row">
+          <span class="label">OFFICE</span>
+          <span class="value">9 Udo Idung, Nwaniba Road, off four lane by water fountain, Uyo 520001, Akwa Ibom</span>
+        </div>
+        <div class="info-row">
+          <span class="label">PHONE</span>
+          <span class="value"><a href="tel:+2349127955849">0912 795 5849</a></span>
+        </div>
+        <div class="info-row">
+          <span class="label">WHATSAPP</span>
+          <span class="value"><a href="https://wa.me/2349127955849?text=Hello%20Shelta%20Homes%20and%20Properties.%20I%27m%20interested%20in%20your%20services" target="_blank" rel="noopener">Message us on WhatsApp</a></span>
+        </div>
+        <div class="info-row">
+          <span class="label">HOURS</span>
+          <span class="value">Mon – Sat, 8:00 AM – 6:00 PM<br><span style="color:var(--ink-soft); font-size:0.85rem;">Please confirm ahead for Sunday visits</span></span>
+        </div>
+        <a class="btn btn-primary wa-btn" href="https://wa.me/2349127955849?text=Hello%20Shelta%20Homes%20and%20Properties.%20I%27m%20interested%20in%20your%20services" target="_blank" rel="noopener">Chat on WhatsApp now</a>
+      </div>
+
+      <div class="form-card observe">
+        <h3>Book a property inspection</h3>
+        <p>Fill this in and our team will confirm a time that works for you, usually within a day.</p>
+
+        <form id="inspection-form">
+          <div class="field-row">
+            <div class="field">
+              <label for="name">Full name</label>
+              <input type="text" id="name" name="name" placeholder="e.g. Aniekan Etim" required>
+            </div>
+            <div class="field">
+              <label for="phone">Phone number</label>
+              <input type="tel" id="phone" name="phone" placeholder="e.g. 080 000 00000" required>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" placeholder="you@email.com">
+          </div>
+
+          <div class="field">
+            <label>What are you interested in?</label>
+            <div class="radio-group">
+              <label class="radio-option"><input type="radio" name="interest" value="Land" checked> Land</label>
+              <label class="radio-option"><input type="radio" name="interest" value="Buying a property"> Buying a property</label>
+              <label class="radio-option"><input type="radio" name="interest" value="Renting or leasing"> Renting / leasing</label>
+              <label class="radio-option"><input type="radio" name="interest" value="Property management"> Property management</label>
+              <label class="radio-option"><input type="radio" name="interest" value="Other"> Other</label>
+            </div>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="date">Preferred inspection date</label>
+              <input type="date" id="date" name="date">
+            </div>
+            <div class="field">
+              <label for="time">Preferred time</label>
+              <select id="time" name="time">
+                <option>Morning (8am – 11am)</option>
+                <option>Midday (11am – 2pm)</option>
+                <option>Afternoon (2pm – 5pm)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="message">Anything else we should know?</label>
+            <textarea id="message" name="message" placeholder="Location, budget range, or details about the property"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Request inspection</button>
+          <p class="form-note">This sends your request to our team. For an instant reply, use WhatsApp instead.</p>
+        </form>
+
+        <div class="form-success" id="form-success">
+          <div class="mark-circle">✓</div>
+          <h3>Thank you, <span id="success-name">there</span>.</h3>
+          <p style="color:var(--ink-soft); margin-top:10px;">Your inspection request has been noted. Our team will call or WhatsApp you shortly to confirm a time.</p>
+          <a class="btn btn-ghost mt-lg" id="form-reset" href="#" style="display:inline-flex;">Submit another request</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="map-wrap observe">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">FIND US</p>
+          <h2>Off Nwaniba Road, by the water fountain.</h2>
+        </div>
+      </div>
+      <div class="map-frame">
+        <iframe
+          src="https://www.google.com/maps?q=9+Udo+Idung,+Nwaniba+Road,+Uyo,+Akwa+Ibom&output=embed"
+          allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          title="Map to Shelta Homes & Properties Ltd, Uyo">
+        </iframe>
+      </div>
+    </div>
+
+    <div class="hours-strip observe">
+      <div><div class="label">ADDRESS</div><div class="value">9 Udo Idung, Nwaniba Road, Uyo</div></div>
+      <div><div class="label">PHONE</div><div class="value">0912 795 5849</div></div>
+      <div><div class="label">RATING</div><div class="value">5.0 on Google</div></div>
+      <div><div class="label">RESPONSE TIME</div><div class="value">Usually within a day</div></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">Shelta Homes<small>&amp; PROPERTIES LTD</small></a>
+        <p>A real estate consultancy based in Uyo, Akwa Ibom — land, luxury property, leasing, management, development and relocation.</p>
+      </div>
+      <div>
+        <h4>NAVIGATE</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>SERVICES</h4>
+        <ul>
+          <li><a href="index.html#services">Land sales</a></li>
+          <li><a href="index.html#services">Property leasing</a></li>
+          <li><a href="index.html#services">Management</a></li>
+          <li><a href="index.html#services">Development</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>CONTACT</h4>
+        <ul>
+          <li>9 Udo Idung, Nwaniba Road,<br>off four lane by water fountain,<br>Uyo 520001, Akwa Ibom</li>
+          <li><a href="tel:+2349127955849">0912 795 5849</a></li>
+          <li><a href="https://wa.me/2349127955849" target="_blank" rel="noopener">Chat on WhatsApp</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Shelta Homes &amp; Properties Ltd. All rights reserved.</span>
+      <span>Uyo, Akwa Ibom State, Nigeria</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
